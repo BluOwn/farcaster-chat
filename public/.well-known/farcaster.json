@@ -3,19 +3,19 @@
   "frame": {
     "version": "1",
     "name": "Monad Chat",
-    "iconUrl": "https://yourdomain.com/logo.png",
-    "homeUrl": "https://yourdomain.com",
-    "imageUrl": "https://yourdomain.com/og.png",
+    "iconUrl": "https://chat.monadescrow.xyz/logo.png",
+    "homeUrl": "https://chat.monadescrow.xyz",
+    "imageUrl": "https://chat.monadescrow.xyz/og.png",
     "buttonTitle": "Open Chat",
-    "splashImageUrl": "https://yourdomain.com/splash.png",
+    "splashImageUrl": "https://chat.monadescrow.xyz/splash.png",
     "splashBackgroundColor": "#000000",
-    "webhookUrl": "https://yourdomain.com/api/webhook",
+    "webhookUrl": "https://chat.monadescrow.xyz/api/webhook",
     "subtitle": "Decentralized chat on Monad blockchain",
     "description": "A real-time decentralized chat app built with MultiSynq and Monad blockchain. Chat with other Farcaster users and store messages on-chain.",
     "screenshotUrls": [
-      "https://yourdomain.com/screenshot1.png",
-      "https://yourdomain.com/screenshot2.png",
-      "https://yourdomain.com/screenshot3.png"
+      "https://chat.monadescrow.xyz/screenshot1.png",
+      "https://chat.monadescrow.xyz/screenshot2.png",
+      "https://chat.monadescrow.xyz/screenshot3.png"
     ],
     "primaryCategory": "social",
     "tags": [
@@ -25,11 +25,11 @@
       "multisynq",
       "decentralized"
     ],
-    "heroImageUrl": "https://yourdomain.com/hero.png",
+    "heroImageUrl": "https://chat.monadescrow.xyz/hero.png",
     "tagline": "Chat that lives on-chain",
     "ogTitle": "Monad Chat",
     "ogDescription": "A real-time decentralized chat app built on the blockchain",
-    "ogImageUrl": "https://yourdomain.com/og.png"
+    "ogImageUrl": "https://chat.monadescrow.xyz/og.png"
   },
   "manifestJson": {
     "version": "1",
@@ -49,10 +49,10 @@
     "theme_color": "#6e56cf",
     "warpcast": {
       "deeplinks": {
-        "ios": "https://yourdomain.com/",
-        "android": "https://yourdomain.com/"
+        "ios": "https://chat.monadescrow.xyz/",
+        "android": "https://chat.monadescrow.xyz/"
       },
-      "notification_server": "https://yourdomain.com/api/notifications"
+      "notification_server": "https://chat.monadescrow.xyzapi/notifications"
     }
   }
 }
