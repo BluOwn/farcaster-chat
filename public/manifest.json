@@ -14,10 +14,9 @@
   "theme_color": "#6e56cf",
   "background_color": "#ffffff",
   "display": "standalone",
-  "orientation": "portrait",
   "warpcast": {
     "deeplinks": {
-      "ios": "https://chat.monadescrow.xyz/",
+      "ios": "https://yourdomain.com/",
       "android": "https://chat.monadescrow.xyz/"
     },
     "notification_server": "https://chat.monadescrow.xyz/api/notifications"
