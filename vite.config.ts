@@ -1,7 +1,4 @@
-// vite.config.ts
-// @ts-ignore - Ignore type errors for Vite modules
 import { defineConfig } from 'vite';
-// @ts-ignore - Ignore type errors for plugin-react
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
@@ -21,4 +18,6 @@ export default defineConfig({
       '@': '/src',
     },
   },
+  // Copy .well-known directory to build output
+  publicDir: 'public',
 });

@@ -1,0 +1,25 @@
+{
+  "version": "1",
+  "name": "Monad Chat",
+  "description": "A decentralized chat app built with MultiSynq and Monad blockchain",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "short_name": "MonadChat",
+  "start_url": "/",
+  "theme_color": "#6e56cf",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "orientation": "portrait",
+  "warpcast": {
+    "deeplinks": {
+      "ios": "https://yourdomain.com/",
+      "android": "https://yourdomain.com/"
+    },
+    "notification_server": "https://yourdomain.com/api/notifications"
+  }
+}

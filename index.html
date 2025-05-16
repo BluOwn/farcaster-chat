@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Monad Chat</title>
     
+    <!-- Manifest file for PWA and Warpcast -->
+    <link rel="manifest" href="/manifest.json" />
+    
     <!-- Farcaster Frame Embed -->
-    <meta name="fc:frame" content='{"version":"next","imageUrl":"https://yourdomain.com/og.png","button":{"title":"Open Chat","action":{"type":"launch_frame","name":"Monad Chat","url":"https://yourdomain.com","splashImageUrl":"https://yourdomain.com/splash.png","splashBackgroundColor":"#000000"}}}' />
+    <meta name="fc:frame" content='{"version":"1","image":"https://yourdomain.com/og.png","buttons":[{"label":"Open Chat","action":"post_redirect"}]}' />
+    <meta name="fc:frame:image" content="https://yourdomain.com/og.png" />
+    <meta name="fc:frame:button:1" content="Open Chat" />
+    <meta name="fc:frame:post_url" content="https://yourdomain.com" />
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="Monad Chat" />

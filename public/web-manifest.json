@@ -1,0 +1,22 @@
+{
+  "short_name": "MonadChat",
+  "name": "Monad Chat",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#6e56cf",
+  "background_color": "#ffffff",
+  "warpcast": {
+    "deeplinks": {
+      "ios": "https://yourdomain.com/",
+      "android": "https://yourdomain.com/"
+    },
+    "notification_server": "https://yourdomain.com/api/notifications"
+  }
+}
