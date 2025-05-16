@@ -1,3 +1,4 @@
+/* This file ensures index.css exists for the build process */
 :root {
   background-color: #181818;
   color: rgba(255, 255, 255, 0.87);

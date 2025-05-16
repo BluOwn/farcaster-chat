@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "echo \"Creating necessary files\" && touch src/App.css src/index.css",
     "build": "tsc && vite build",
     "lint": "biome check src",
     "preview": "vite preview",
