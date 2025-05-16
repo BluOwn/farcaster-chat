@@ -25,8 +25,14 @@
     "esModuleInterop": true,
     
     /* Type declarations for Vite env variables */
-    "types": ["vite/client"]
+    "types": ["vite/client", "node"],
+    
+    /* Path aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": ["src", "src/types", "src/**/*.ts", "src/**/*.tsx", "src/vite-env.d.ts"],
+  "include": ["src", "src/types", "src/**/*.ts", "src/**/*.tsx", "src/vite-env.d.ts", "api/**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
