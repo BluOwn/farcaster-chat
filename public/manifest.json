@@ -17,9 +17,9 @@
   "orientation": "portrait",
   "warpcast": {
     "deeplinks": {
-      "ios": "https://yourdomain.com/",
-      "android": "https://yourdomain.com/"
+      "ios": "https://chat.monadescrow.xyz/",
+      "android": "https://chat.monadescrow.xyz/"
     },
-    "notification_server": "https://yourdomain.com/api/notifications"
+    "notification_server": "https://chat.monadescrow.xyz/api/notifications"
   }
 }
