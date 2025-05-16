@@ -1,24 +1,23 @@
-<<<<<<< HEAD
-# farcaster-chat
-=======
-This is a [Vite](https://vitejs.dev) project bootstrapped with [`@farcaster/create-mini-app`](https://github.com/farcasterxyz/frames/tree/main/packages/create-mini-app).
+# Farcaster Chat
 
-## `farcaster.json`
+A decentralized chat application built with Farcaster Mini Apps, MultiSynq, and Monad blockchain.
 
-The `/.well-known/farcaster.json` is served from the [public
-directory](https://vite.dev/guide/assets) and can be updated by editing
-`./public/.well-known/farcaster.json`.
+## Features
 
-You can also use the `public` directory to serve a static image for `splashBackgroundImageUrl`.
+- Real-time chat using MultiSynq for synchronization
+- Messages stored on Monad blockchain
+- Farcaster authentication
+- Connect crypto wallets
+- Share messages on Farcaster
 
-## Frame Embed
+## Technologies
 
-Add a the `fc:frame` in `index.html` to make your root app URL sharable in feeds:
+- Farcaster Frame SDK
+- Croquet for real-time synchronization
+- Ethers.js for blockchain interactions
+- React + TypeScript
+- Vite
 
-```html
-  <head>
-    <!--- other tags --->
-    <meta name="fc:frame" content='{"version":"next","imageUrl":"https://placehold.co/900x600.png?text=Frame%20Image","button":{"title":"Open","action":{"type":"launch_frame","name":"App Name","url":"https://app.com"}}}' /> 
-  </head>
-```
->>>>>>> 8043182 (Initial commit: Farcaster Mini App with MultiSynq and Monad integration)
+## Setup
+
+1. Clone the repository
