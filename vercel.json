@@ -2,11 +2,10 @@
   "framework": "vite",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install",
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
+    { "src": "/manifest.json", "dest": "/manifest.json" },
+    { "src": "^/assets/(.*)", "dest": "/assets/$1" },
+    { "src": "^/(.+\\.(?:js|css|svg|jpg|png|gif|ico|json))$", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
