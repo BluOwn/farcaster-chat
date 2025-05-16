@@ -16,14 +16,17 @@
 
     /* Linting */
     "strict": true,
-    "noUnusedLocals": false,     // შეცვლილია false-ად განვითარებისას სიმარტივისთვის
-    "noUnusedParameters": false, // შეცვლილია false-ად განვითარებისას სიმარტივისთვის
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true,
     
-    /* Web3 და Ethereum */
+    /* Web3 and Ethereum */
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    
+    /* Type declarations for Vite env variables */
+    "types": ["vite/client"]
   },
-  "include": ["src", "src/types"],
+  "include": ["src", "src/types", "src/**/*.ts", "src/**/*.tsx", "src/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

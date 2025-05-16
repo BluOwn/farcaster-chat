@@ -1,11 +1,12 @@
 import { useState, useEffect, useCallback } from 'react';
-import { useFarcasterAuth } from './useFarcasterAuth';
+import { useFarcasterAuth } from '../services/auth';
 import { initMultiSynq, ChatMessage, ChatUser } from '../services/multisynq';
 import { setupMonadContract } from '../services/blockchain';
 import { sdk } from '@farcaster/frame-sdk';
 
-const CONTRACT_ADDRESS = "0x26a849DEeF67C78595AB0E57Ea4b6C64AF68F253"; // Your deployed contract address
-const MULTISYNQ_API_KEY = "2w1BbLTcjkLhBXTldf0VbY2wULOfqfEGkHmDobVedv";
+// Use environment variables for sensitive data
+const CONTRACT_ADDRESS = import.meta.env.VITE_CONTRACT_ADDRESS || "0x26a849DEeF67C78595AB0E57Ea4b6C64AF68F253";
+const MULTISYNQ_API_KEY = import.meta.env.VITE_MULTISYNQ_API_KEY || "2w1BbLTcjkLhBXTldf0VbY2wULOfqfEGkHmDobVedv";
 
 export function useMonadChat() {
   const { user, isLoading: isAuthLoading, error: authError, signIn } = useFarcasterAuth();
@@ -36,7 +37,7 @@ export function useMonadChat() {
         const synq = await initMultiSynq("monad-chat-room", {
           apiKey: MULTISYNQ_API_KEY,
           onMessageReceived: (message) => {
-            setMessages(prev => [...prev, message]);
+            setMessages((prev: ChatMessage[]) => [...prev, message]);
           },
           onUsersUpdated: (updatedUsers) => {
             setUsers(updatedUsers);
