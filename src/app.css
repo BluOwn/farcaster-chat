@@ -1,3 +1,4 @@
+/* src/App.css */
 :root {
   --primary-color: #6e56cf;
   --secondary-color: #9e85f7;
@@ -59,11 +60,6 @@ button {
 
 button:hover {
   background-color: var(--secondary-color);
-}
-
-button:disabled {
-  background-color: #cccccc;
-  cursor: not-allowed;
 }
 
 main {
@@ -183,18 +179,19 @@ footer {
 }
 
 .wallet-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.connected-address {
   font-size: 14px;
 }
 
-.wallet-button {
-  padding: 6px 12px;
-  font-size: 14px;
-}
-
-.wallet-button.connect {
+.connect-button {
   background-color: #2e7d32;
 }
 
-.wallet-button.disconnect {
+.disconnect-button {
   background-color: #c62828;
 }
